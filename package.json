@@ -1,0 +1,36 @@
+{
+  "name": "nodejs-udp",
+  "version": "1.0.0",
+  "description": "Test UDP",
+  "main": "index.js",
+  "repository": "https://github.com/kawashinji/nodejs-udp.git",
+  "author": "Shinji Kawaguchi <shinji.kawaguchi@clouto.io>",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "dgram": "^1.0.1"
+  },
+  "engines": {
+    "node": ">= 12.13.0",
+    "npm": ">= 6.9.0",
+    "yarn": ">= 1.19.1"
+  },
+  "scripts": {
+    "build": "webpack --config build/webpack.config.js --mode development",
+    "start:a": "node bin/reciever.js",
+    "start:b": "node bin/sender.js"
+  },
+  "devDependencies": {
+    "clean-webpack-plugin": "^3.0.0",
+    "prettier": "^1.19.1",
+    "ts-loader": "^6.2.1",
+    "tslint": "^6.0.0",
+    "tslint-config-airbnb": "^5.11.2",
+    "tslint-config-prettier": "^1.18.0",
+    "tslint-loader": "^3.5.4",
+    "tslint-plugin-prettier": "^2.1.0",
+    "typescript": "^3.7.5",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10"
+  }
+}
