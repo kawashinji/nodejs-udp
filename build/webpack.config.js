@@ -31,6 +31,10 @@ module.exports = (env, options) => {
           use: [
             {
               loader: 'tslint-loader',
+              options: {
+                typeCheck: true,
+                fix: true,
+              },
             },
           ],
         },

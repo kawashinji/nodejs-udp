@@ -16,9 +16,16 @@ socket.on('listening', () => {
 socket.on('message', (message, remote) => {
   console.log(`${remote.address}:${remote.port} - ${message}`)
 
-  socket.send(message, 0, message.length, PORT_B, HOST_B, (err, bytes) => {
-    if (err) throw err
-  })
+  socket.send(
+    message,
+    0,
+    message.length,
+    remote.port,
+    remote.address,
+    (err, bytes) => {
+      if (err) throw err
+    }
+  )
 })
 
 socket.bind(PORT_A, HOST_A)
