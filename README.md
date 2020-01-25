@@ -1,6 +1,5 @@
 # Node UDP お試し
-- 以下のブログを参考にしたツール
-https://hikoleaf.hatenablog.jp/entry/2019/06/08/235753
+- UDP通信の挙動を確認するお試しツール
 
 ## Required
 
@@ -22,5 +21,8 @@ yarn build
 
 ```
 yarn start:a
-yarn start:b
+yarn start:b --host 127.0.0.1 --port 3002
 ```
+
+## Thanks
+- https://hikoleaf.hatenablog.jp/entry/2019/06/08/235753
