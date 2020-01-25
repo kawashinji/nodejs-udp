@@ -23,6 +23,3 @@ yarn build
 yarn start:a
 yarn start:b --host 127.0.0.1 --port 3002
 ```
-
-## Thanks
-- https://hikoleaf.hatenablog.jp/entry/2019/06/08/235753
